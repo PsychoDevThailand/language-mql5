@@ -8,7 +8,7 @@
 		"mql5",
 		"mql4"
   ],
-  "repository": "https://github.com/atom/language-mql5",
+  "repository": "https://github.com/pathana13/language-mql5",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
