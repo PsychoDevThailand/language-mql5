@@ -1,12 +1,12 @@
 {
   "name": "language-mql5",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A short description of your language package",
   "keywords": [
     "language",
     "grammar",
-		"mql5",
-		"mql4"
+    "mql5",
+    "mql4"
   ],
   "repository": "https://github.com/pathana13/language-mql5",
   "license": "MIT",
