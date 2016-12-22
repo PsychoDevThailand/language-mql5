@@ -1,16 +1,16 @@
 {
   "name": "language-mql5",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Adds syntax highlighting to mql5/mql4 language in Atom",
   "keywords": [
     "language",
     "grammar",
     "mql5",
     "mql4",
-		"metatrader",
-		"forex",
-		"forex ea",
-		"expert advisor"
+    "metatrader",
+    "forex",
+    "forex ea",
+    "expert advisor"
   ],
   "repository": "https://github.com/PsychoDevThailand/language-mql5",
   "license": "MIT",
