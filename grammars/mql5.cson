@@ -58,6 +58,18 @@ patterns: [
 		name: "string.other.mql5"
 	}
 	{
+    comment: "new Class"
+    begin: "(new)(\\s)"
+    beginCaptures:
+      "1":
+        name: "keyword.control.mql5"
+    end:  "([\\(\\);])"
+    endCaptures:
+      "0":
+        name: "punctuation.definition.string.end.mql5"
+    name: "support.class.mql5"
+	}
+	{
 		comment: "preprocessor directives"
 		match: "#\\b(include|package|define|undef|import|property|resource|ifdef|ifndef|else|endif)\\b"
 		name: "keyword.control.preprocessor.mql5"
@@ -145,11 +157,21 @@ patterns: [
 	}
   {
     comment: "anonymous function"
-    match: "[a-zA-Z]+(?=\\()"
+    match: "[a-zA-Z0-9_]+(?=\\()"
     name: "support.function.mql5"
   }
 	{
-		comment: "other variables"
+		comment: "anonymous Class"
+		match: "^[a-zA-Z0-9_]+\\S"
+		name: "support.class.mql5"
+	}
+  {
+    comment: "agrs type in function"
+    match: "(\\w)+(?=(\\s).([\\w\\d\\[\\]&*=]+(\\)|,)))"
+    name: "support.class.mql5"
+  }
+	{
+		comment: "other variable"
 		match: "\\b([a-zA-Z_]+[a-zA-Z0-9_]*)\\b"
 		name: "variable.other.mql5"
 	}
